@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo.</title>
+    <style>
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        div.quadrado{
+            display: inline-block; /*deixar uma do lado do outro*/
+            border: 2px solid black; /*largura da linha da borda, tipo solida e cor preta*/
+            width: 300px; /*largura*/
+            height: 300px; /*altura*/
+            border-radius: 10px; /*arredondamento de cantos da caixa*/
+            background-color: aquamarine; /*cor da caixa */
+        }
+
+        div#q1{
+            background-color: blueviolet; /*aplicando cor na div, com o id*/
+            
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, violet); /*aplicando cor gradiente na div, com o id*/
+        }
+        div#q3{
+            background-image: url('imagens/pattern001.png'); /*aplicando imagem na div, com o id*/
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+            color: black;
+            padding: 10px;
+            text-align: normal;
+            font-weight: bold;
+            background-color: rgba(240, 248, 255, 0.726);
+        }
+    </style>
+</head>
+<body> 
+    <div class="quadrado" id="q1">
+
+    </div>
+    
+    <div class="quadrado" id="q2">
+        
+    </div>
+
+    <div class="quadrado" id="q3">
+        
+    </div>
+
+    <p>nesse capítulo, foi visto a possibilidade de aplicar corese de três formas, como cor solo, como na primeriro quandro, 
+        no segundo foi aplicado a opção de gradiente e no terceiro uma imagem! 
+    </p>
+</body>
+</html>
