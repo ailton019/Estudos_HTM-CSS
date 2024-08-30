@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-color: blue;
+            background-size: 100% 100%;
+            position: relative; /*posição relativa*/
+            height: 500px;
+            padding: 10px;
+        }
+        #conteudo{
+            background-color: brown ;
+            opacity: calc(70%);
+            background-size: 100% 100%;
+            position: absolute; /*pode alterar as direções de cima e laterais*/
+            height: 200px;
+            width: 400px;
+            background-image: url('imagens/target001.png');
+            left: 50%; /*lado esquerdo, pode ser alterado essas direções quando a posição e absoluta*/
+            top: 50%; /*parte de cima*/
+            transform: translate(-50%, -50%);/*centralizar uma imagem */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+    <p>
+        O <code>#conteudo</code> tem um <code>background-color</code> marrom, que será visível se a imagem de fundo tiver áreas transparentes. A opacidade é ajustada para 70% (nota: a função <code>calc()</code> não é necessária; <code>opacity: 0.7;</code> seria mais direto). A imagem de fundo do <code>#conteudo</code> é configurada para preencher todo o elemento com <code>background-size: 100% 100%;</code>. A posição do <code>#conteudo</code> é definida como absoluta com <code>position: absolute;</code>, o que significa que ele é posicionado em relação ao <code>#container</code> (seu pai, que tem <code>position: relative;</code>). O elemento tem uma altura de 200 pixels e uma largura de 400 pixels. A imagem de fundo é especificada com <code>background-image: url('imagens/target001.png');</code>. O <code>#conteudo</code> é posicionado a 50% da largura e altura do <code>#container</code> com <code>left: 50%;</code> e <code>top: 50%;</code>, e é centralizado usando <code>transform: translate(-50%, -50%);</code>. Em resumo, o <code>#container</code> atua como um contêiner com uma imagem de fundo e cor azul, enquanto o <code>#conteudo</code> é centralizado dentro dele com uma cor de fundo marrom, uma imagem sobreposta e opacidade ajustada para 70%.
+    </p>
+    
+
+</body>
+</html>
