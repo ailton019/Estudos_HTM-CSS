@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            font-size: 15px;
+        }
+        th{
+            background-color: rgb(110, 110, 103);
+            text-align: center;
+        }
+        td.num{
+            text-align: right;
+        }
+        td{
+            background-color: rgb(253, 253, 253);
+        }
+        #total{
+            background-color: rgba(43, 128, 226, 0.712);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Tabelas com dados</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45,973,190</td> 
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17,219,679</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21,322,692</td>
+            </tr>
+            <tr>
+                <td>Acre (AC)</td>
+                <td class="num">906,876</td>
+            </tr>
+            <tr>
+                <td>Alagoas (AL)</td>
+                <td class="num">3,351,543</td>
+            </tr>
+            <tr>
+                <td>Amapá (AP)</td>
+                <td class="num">877,613</td>
+            </tr>
+            <tr>
+                <td>Amazonas (AM)</td>
+                <td class="num">4,269,995</td>
+            </tr>
+            <tr>
+                <td>Bahia (BA)</td>
+                <td class="num">14,930,634</td>
+            </tr>
+            <tr>
+                <td>Ceará (CE)</td>
+                <td class="num">9,240,580</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal (DF)</td>
+                <td class="num">3,094,325</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo (ES)</td>
+                <td class="num">4,108,508</td>
+            </tr>
+            <tr>
+                <td>Goiás (GO)</td>
+                <td class="num">7,206,589</td>
+            </tr>
+            <tr>
+                <td>Maranhão (MA)</td>
+                <td class="num">7,268,621</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso (MT)</td>
+                <td class="num">3,567,234</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul (MS)</td>
+                <td class="num">2,839,188</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais (MG)</td>
+                <td class="num">21,292,666</td>
+            </tr>
+            <tr>
+                <td>Pará (PA)</td>
+                <td class="num">8,777,124</td>
+            </tr>
+            <tr>
+                <td>Paraíba (PB)</td>
+                <td class="num">4,059,905</td>
+            </tr>
+            <tr>
+                <td>Paraná (PR)</td>
+                <td class="num">11,597,484</td>
+            </tr>
+            <tr>
+                <td>Pernambuco (PE)</td>
+                <td class="num">9,674,793</td>
+            </tr>
+            <tr>
+                <td>Piauí (PI)</td>
+                <td class="num">3,304,676</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte (RN)</td>
+                <td class="num">3,565,796</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul (RS)</td>
+                <td class="num">11,471,373</td>
+            </tr>
+            <tr>
+                <td>Rondônia (RO)</td>
+                <td class="num">1,860,199</td>
+            </tr>
+            <tr>
+                <td>Roraima (RR)</td>
+                <td class="num">652,713</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina (SC)</td>
+                <td class="num">7,727,466</td>
+            </tr>
+            <tr>
+                <td>Sergipe (SE)</td>
+                <td class="num">2,353,261</td>
+            </tr>
+            <tr>
+                <td>Tocantins (TO)</td>
+                <td class="num">1,619,000</td>
+            </tr>
+        </tbody>        
+        <tfoot>
+            <tr>
+                <th> Total</th>
+                <td class="num" id="total"><strong>234.133.723</strong></td>
+            </tr>
+            
+        </tfoot>
+        
+    </table>
+</body>
+</html>
