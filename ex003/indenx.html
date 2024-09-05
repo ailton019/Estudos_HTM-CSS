@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTML</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            height: 400px;
+
+        td{
+            font-weight: bolder;
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: bottom; /*alinhamento vertical*/
+        }
+        td.a1{
+            background-color: rgb(30, 255, 0);
+        }
+        td.e2{
+            background-color: rgb(255, 165, 0);
+        }
+        td.b3{
+            background-color: rgb(0, 128, 0);
+        }
+        td.d3{
+            background-color: rgb(0, 0, 255);
+        }
+        td.e4{
+            background-color: rgba(0, 0, 0, 0.76);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Manipulando Tabelas em HTML.</h1>
+
+
+
+    <table>
+        <tr>
+            <td class="a1">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+            <td>E1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td>D2</td>
+            <td class="e2">E2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="b3">B3</td>
+            <td>C3</td>
+            <td class="d3">D3</td>
+            <td>E3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+            <td class="e4">E4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+            <td>C5</td>
+            <td>D5</td>
+            <td>E5</td>
+        </tr>
+    </table>
+</body>
+</html>
