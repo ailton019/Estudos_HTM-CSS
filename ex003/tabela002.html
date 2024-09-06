@@ -32,15 +32,24 @@
             background-color: rgba(43, 128, 226, 0.712);
             color: white;
         }
+        caption{
+            font: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            background-color: rgba(121, 121, 122, 0.712);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Minha Tabelas com dados</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -160,7 +169,7 @@
         </tbody>        
         <tfoot>
             <tr>
-                <th> Total</th>
+                <th scope="row"> Total</th>
                 <td class="num" id="total"><strong>234.133.723</strong></td>
             </tr>
             
