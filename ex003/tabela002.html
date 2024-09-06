@@ -11,6 +11,7 @@
         table{
             width: 600px;
             border-collapse: collapse;
+            position: relative; /* fixar cabeçalho da tabela. */
         }
         td, th{
             border: 1px solid black;
@@ -19,14 +20,16 @@
             font-size: 15px;
         }
         th{
-            background-color: rgb(110, 110, 103);
+            background-color: rgb(73, 73, 64);
             text-align: center;
         }
         td.num{
             text-align: right;
         }
-        td{
-            background-color: rgb(253, 253, 253);
+        thead > tr > th { /* fixar cabeçalho da tabela. */
+            position: sticky;
+            top: -1px;
+            background-color: rgb(73, 73, 64);
         }
         #total{
             background-color: rgba(43, 128, 226, 0.712);
@@ -39,6 +42,9 @@
             background-color: rgba(121, 121, 122, 0.712);
             color: rgb(0, 0, 0);
             padding: 10px;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(8, 221, 150, 0.37);
         }
     </style>
 </head>
