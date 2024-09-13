@@ -12,8 +12,8 @@
         }
 
         #table1 {
-            width: 600px;
-            height: 400px;
+            width: 900px;
+            height: 700px;
             border-collapse: collapse;
             margin-bottom: 70px;
         }
@@ -74,9 +74,9 @@
             padding: 10px;
         }
 
-        #table2{
-            width: 600px;
-            height: 400px;
+        #table2 {
+            width: 800px;
+            height: 700px;
             border-collapse: collapse;
             margin-bottom: 70px;
         }
@@ -89,24 +89,32 @@
             padding: 20px;
         }
 
-        #table2{
-            & .huma{
+        #table2 {
+            & .huma {
                 background-color: rgb(66, 255, 139);
             }
-            & .exatas{
+
+            & .exatas {
                 background-color: rgb(255, 59, 59);
             }
-            & .media_huma{
+
+            & .media_huma {
                 text-align: left;
                 background-color: rgb(164, 226, 98);
             }
-            & .media_num{
+
+            & .media_num {
                 text-align: left;
                 background-color: rgb(227, 97, 97);
             }
-            & .nota_mediaEX{
+
+            & .nota_mediaEX {
                 background-color: rgb(220, 8, 8);
             }
+        }
+
+        div#contem {
+            overflow-x: auto;
         }
     </style>
 </head>
@@ -115,6 +123,9 @@
     <h1>Exercicio do Curso </h1>
     <h3 class="tittab">Tabelas de treinamento.</h3>
 </body>
+
+
+<p>configuração de deixar a tabela responsiva, criar uma DIV, na tebale e configurar com o overflow</p>
 <table id="table1">
     <thead>
         <tr>
@@ -170,70 +181,72 @@
     </tbody>
 </table>
 
-<table id="table2">
-    <thead>
-        <tr>
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplina</th>
-            <th colspan="2">Nota</th>
-            <th rowspan="2">Média</th>
-        </tr>
-        <tr>
-            <th rowspan="2">Nota1</th>
-            <td>nota2</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="rowgroup" rowspan="4" class="exatas">Exatas</th>
-            <td>Matematica</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-        </tr>
-        <tr>
-            <td>química</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-        </tr>
-        <tr>
-            <td>Biologia</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-        </tr>
-        <tr>
-            <td>Fisica</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-        </tr>
-        <tr>
-            <td colspan="4" class="media_num">Media de Exatas</td>
-            <td class="media_num">0.00</td>
-        </tr>
-        <tr>
-            <th scope="rowgroup" rowspan="2" class="huma">Humanas</th>
-            <td>química</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-
-        </tr>
-
-        <tr>
-            <td>Biologia</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-        </tr>
-        <tr>
-            <td colspan="4" class="media_huma">Media de Humanas</td>
-            <td class="media_huma">0.00</td>
-        </tr>
-    </tbody>
-</table>
+<div id="contem">
+    <table id="table2">
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplina</th>
+                <th colspan="2">Nota</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Nota1</th>
+                <td>nota2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4" class="exatas">Exatas</th>
+                <td>Matematica</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td>química</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media_num">Media de Exatas</th>
+                <td class="media_num">0.00</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2" class="huma">Humanas</th>
+                <td>química</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+    
+            </tr>
+    
+            <tr>
+                <td>Biologia</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media_huma">Media de Humanas</td>
+                <td class="media_huma">0.00</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 </body>
 
