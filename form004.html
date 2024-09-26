@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Novo formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="30">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Tel:</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel"  placeholder="(xx)xxxx-xxxx" >
+            </p>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexomas"> <label for="isexomas">Masculino</label>
+            <input type="radio" name="sexo" id="isexofem"> <label for="isexofem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbasq" id="iesbasq"> <label for="iesbasq">Basquete </label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Fubtebol</label> <br>
+            <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">Volei</label> <br>
+            <input type="checkbox" name="estenis" id="iestenis"> <label for="iestenis">Tênis </label><br>
+            <input type="checkbox" name="esatletica" id="iesatletica"> <label for="iesatletica">Atletismo</label> <br>
+            <input type="checkbox" name="escorredor" id="iescorredor"> <label for="iescorredor">Corredor</label> <br>
+            <input type="checkbox" name="esgolf" id="iesgolf"> <label for="iesgolf">Golf</label> <br>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
